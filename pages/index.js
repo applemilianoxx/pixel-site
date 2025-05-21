@@ -8,10 +8,10 @@ export default function Homepage() {
 
   return (
     <div className="bg-black text-white min-h-screen font-sans relative overflow-hidden">
-      <header className="flex justify-between items-center p-4">
-        <h1 className="text-3xl font-bold text-green-500">Pixelis</h1>
+      <header className="flex justify-between items-center p-1">
+        <img src="/pixelis.png" alt="Pixelis Logo" className="w-50 h-50 translate-y-0" />
         <button
-          className="bg-green-600 px-6 py-3 rounded-full text-base font-semibold shadow-xl transition-all duration-200 hover:brightness-110"
+className="-mt-30 bg-green-600 px-9 py-3 rounded-full text-base font-semibold shadow-xl transition-all duration-200 hover:brightness-110"
           onClick={async () => {
             if (window.solana && window.solana.isPhantom) {
               try {
@@ -31,11 +31,11 @@ export default function Homepage() {
         </button>
       </header>
 
-      <section className="text-center py-20 px-4 relative z-10">
+      <section className="text-center py-4 px-4 relative z-10 mt-[-40px]">
         <h1 className="text-5xl font-bold mb-4">
           Play to <span className="text-green-500">Own</span>
         </h1>
-        <p className="text-lg mb-8 text-gray-400 max-w-xl mx-auto">
+        <p className="text-lg mb-20 text-gray-400 max-w-xl mx-auto">
           Create. Invest. Earn. Pixelis is the platform where creators launch games and players become shareholders.
         </p>
         <div className="space-x-4">
